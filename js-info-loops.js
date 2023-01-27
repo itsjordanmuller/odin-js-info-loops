@@ -56,14 +56,24 @@ alert(a);
 
 // Task 5 - Replace "for" with "while"
 
-for (let h = 0; h < 3; h++) {
-  alert( `number ${h}!` );
-}
+// for (let h = 0; h < 3; h++) {
+//   alert( `number ${h}!` );
+// }
 // Original For Loop Output: number 0!, number 1!, number 2!
 
-let j = 0;
-while (j < 3) {
-  alert( `number ${j}!` );
-  j++;
-}
+// let j = 0;
+// while (j < 3) {
+//   alert( `number ${j}!` );
+//   j++;
+// }
 // Modified While Loop Output: number 0!, number 1!, number 2!
+
+
+// Task 6 - Repeat until the input is correct
+
+while (true) {
+  var k = prompt("Enter a number greater than 100:");
+  if (parseInt(k) > 100) {
+    console.log(k+" is greater than 100!");
+  }
+}

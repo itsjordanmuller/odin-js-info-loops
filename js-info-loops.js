@@ -71,9 +71,31 @@ alert(a);
 
 // Task 6 - Repeat until the input is correct
 
-while (true) {
-  var k = prompt("Enter a number greater than 100:");
-  if (parseInt(k) > 100) {
-    console.log(k+" is greater than 100!");
+// while (true) {
+//   var k = prompt("Enter a number greater than 100:");
+//   if (parseInt(k) > 100) {
+//     console.log(k+" is greater than 100!");
+//   }
+// }
+
+
+// Task 7 - Output prime numbers
+
+function printPrimes(n) {
+  for (var i = 2; i <= n; i++) {
+      var isPrime = true;
+      for (var j = 2; j < i; j++) {
+          if (i % j === 0) {
+              isPrime = false;
+              break;
+          }
+      }
+      if (isPrime) {
+          console.log(i);
+      }
   }
 }
+
+var n = prompt("Enter a number for n: (Try 1,000,000 even! But beware your browser may crash.)");
+console.log("All of the Prime numbers between 2 and " + n + " are as follows:");
+printPrimes(n);
